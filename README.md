@@ -1,13 +1,13 @@
 # aapanel
 
-## aapanel 6.6.6
+## aapanel 6.6.6 - CVE-2020-14421
 
 * Description : Allows attacker to run arbitrary command remotely
 * Affected version : All <= 6.6.6
 
 ### Information
 
-To make this PoC, I just install fresh Ubuntu 20.04, then I instaled `wget` + `sudo` and executed this script `wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh` 
+To make this PoC, I just installed fresh Ubuntu 20.04, then I installed `wget` + `sudo` and executed this script `wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh` 
 
 * Vulnerability Type : Remote command execution (RCE Authenticated)
 
