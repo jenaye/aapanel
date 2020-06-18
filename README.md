@@ -40,4 +40,4 @@ Now just execute your crontab and wait your session.
 
 ### Fast Exploit
 
-Just run `msfconsole -r aapanel-rce.rc`  copy/paste the payload into  script content section, and enjoy your session.
+Just run `msfconsole -r aapanel.rc`  copy/paste the payload into  script content section, and enjoy your session.
