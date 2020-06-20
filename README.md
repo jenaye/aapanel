@@ -1,5 +1,35 @@
 # aapanel
 
+
+
+## aapanel 6.6.6 - CVE-XXX
+
+* Description : allows remote authenticated users to execute arbitrary commands via the setting menu of Sotfware Store.
+* Affected version : All <= 6.6.6
+
+
+### Information
+
+To make this PoC, I just installed the software using docker-compose
+
+* Vulnerability Type : Remote command execution (RCE Authenticated)
+
+### POC
+
+
+Go to Software Store, click on any row from the setting's field, intercept the request when you click on "start/stop/restart" and modify/edit the resquest to execute what you want. Here is an example with curl : 
+
+<img width="1280" alt="receStore" src="https://raw.githubusercontent.com/jenaye/aapanel/master/injectionCommandStore.png">
+
+<img width="1280" alt="receStore" src="https://raw.githubusercontent.com/jenaye/aapanel/master/getCurl.png">
+
+
+
+
+
+
+
+
 ## aapanel 6.6.6 - CVE-2020-14421
 
 * Description : Allows attacker to run arbitrary command remotely
