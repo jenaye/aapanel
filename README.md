@@ -1,6 +1,6 @@
 # aapanel
 
-## aapanel 6.6.6 - CVE-XXX
+## aapanel 6.6.6 - CVE-2020-14950
 
 * Description : allows remote authenticated users to execute arbitrary commands via the setting menu of Sotfware Store.
 * Affected version : All <= 6.6.6
